@@ -1,0 +1,113 @@
+'''
+  Author: __mjolly__
+  email: mangesh.jolly@gmail.com
+'''
+
+import sys
+import csv
+import datetime
+import os.path
+import argparse
+
+
+def command_line(input_str, *args):
+
+
+#  print input_str
+#  print args[0]
+#  for var in args:
+#    print var
+
+
+  if len(args) == 0:
+    str_parse(input_str)
+  elif len(args) == 1:
+    str_parse_first_file(input_str, args[0])
+  elif len(args) == 2:
+    str_parse_input_first_second_file(input_str, args[0], args[1])
+
+
+def command_line(sub_str):
+  
+  print "enter function command_line(inputstr)"
+  try:
+    os.path.exists("/temp/record1.csv")
+  except IOError:
+    print 'DevError:Check filepath/filename'
+    exit()
+  
+
+  csv_file_reader = open("/temp/record1.csv","r")
+  cur_reader = csv.reader(csv_file_reader, delimiter=',') 
+  cur_work_list = []
+
+  
+  for row in cur_reader:
+    cur_work_list.append(row)
+  
+
+  try:
+    os.path.exists("/temp/logfile.csv")
+  except IOError:
+    print 'DevError:Check filepath/filename for logfile'
+    exit()
+
+  csv_file_writer = open("/temp/logfile.csv", "a")
+  cur_writer = csv.writer(csv_file_writer, delimiter=' ', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+  for list_record in cur_work_list:
+    cur_parse = (' '.join(list_record)).lower()
+    cur_result = cur_parse.find(sub_str)
+    if  ( cur_result != -1 ): 
+      print list_record
+      cur_writer.writerow([datetime.datetime.now(), list_record])
+      
+      
+
+  csv_file_writer.close() 
+  csv_file_reader.close()
+  return
+
+
+'''
+def command_line(inputstr, file_input_str):
+  
+  csv_file_reader = open(file_input_str,"r")
+  print file_input_str
+  print inputstr
+
+  return
+
+def command_line(inputstr, file_input_first, file_input_second):
+
+
+  print 'Enter two file input mode'
+  return
+'''
+
+def main():
+
+ 
+  parser = argparse.ArgumentParser()
+  parser.add_argument("strparam", help="input string parameter")
+  parser.add_argument('-i', '--input', help="input file name", required=False)
+  parser.add_argument('-o', '--output',help="Output file name", required=False)
+  
+ 
+  try:
+    args = parser.parse_args()
+  except SystemExit:
+    print("UsageHelp: bash# filename.py <stringParam> -i <inputFileName:Required> -o <outputFileName:Optional>")
+   
+ 
+  if len(sys.argv) >= 6:
+    command_line(str(sys.argv[1]), str(sys.argv[3]), str(sys.argv[5]))
+  elif len(sys.argv) >= 4:
+    command_line(str(sys.argv[1]), str(sys.argv[3]))
+  elif len(sys.argv) >= 2:
+    command_line(str(sys.argv[1]))
+  else:
+    print "UsageHelp: bash# filename.py <stringParam> -i <inputFilename:Required> -o <outputFileName:Optional>"
+
+
+if __name__ == '__main__':
+  main()

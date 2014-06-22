@@ -1,0 +1,34 @@
+import sys
+import csv
+
+def command_line(inputstr):
+  
+  csv_file_reader = open("/temp/record1.csv","r")
+  cur_reader = csv.reader(csv_file_reader, delimiter=',') 
+  cur_work_list = []
+  
+  for row in cur_reader:
+    cur_work_list.append(row)
+  
+
+  for list_record in cur_work_list
+    print list_record
+# print 'Success - file open'
+ # print inputstr
+  
+
+
+  csv_file_reader.close()
+  return
+
+def main():
+  print 'String Parser-Analyzer for Files\n'
+  
+  if len(sys.argv[1]) >= 2:
+    searchstr = sys.argv[1]
+    command_line(searchstr) 
+  else:
+    print 'DevError: undefined function'
+
+if __name__ == '__main__':
+  main()

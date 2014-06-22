@@ -1,0 +1,10 @@
+ID,emplid,firstname,lastname,phone1,phone2,email,position
+1,87690,mangesh,jolly,(541) 754-3010,(213) 595 2527,mangesh.jolly@gmail.com,developer
+2,92837,elizabeth,beaty,(714) 595 7623,(714) 595-3010,ebeaty@gmail.com,staff
+3,67891,megan,price,(415) 234 5890,(415) 555 8989,mprice@gmail.com,director
+4,67891,MEGAN,Pricee,(415) 234-5890,(415) 555 8989,mprice@gmail.com,director
+5,67891,megan,PRICE,(415) 234 5890,(415)-555-8989,mprice@gmail.com,director
+6,87690,mangeshd,jolly,1 (541) 7543010,(213) 595 2527,mangesh.jolly@gmail.com,developer
+7,67891,megane,PRICE,(415) 234 5890,(415)-555-8989,mprice@gmail.com,director
+8,92837,elizabeth,beatyy,+1 (714) 595 7623,(714) 595-3010,ebeaty@gmail.com,staff
+9,92837,elizabethk,beaty,(714) 595 7623,(714) 595-3010,ebeaty@gmail.com,staff

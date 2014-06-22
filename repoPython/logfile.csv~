@@ -1,0 +1,26 @@
+ first_file_parse_result
+|2013-10-28 01:09:20.595790| |['1', '87690', 'mangesh', 'jolly', '(541) 754-3010', '(213) 595 2527', 'mangesh.jolly@gmail.com', 'developer']|
+|2013-10-28 01:09:20.596388| |['2', '92837', 'elizabeth', 'beaty', '(714) 595 7623', '(714) 595-3010', 'ebeaty@gmail.com', 'staff']|
+|2013-10-28 01:09:20.596414| |['6', '87690', 'mangeshd', 'jolly', '1 (541) 7543010', '(213) 595 2527', 'mangesh.jolly@gmail.com', 'developer']|
+second_file_parse_result
+|2013-10-28 01:09:20.596488| |['1', '87690', 'mangesh', 'jolly', '(541) 754-3010', '(213) 595 2527', 'mangesh.jolly@gmail.com', 'developer']|
+|2013-10-28 01:09:20.596507| |['2', '92837', 'elizabeth', 'beaty', '(714) 595 7623', '(714) 595-3010', 'ebeaty@gmail.com', 'staff']|
+|2013-10-28 01:09:20.596521| |['6', '87690', 'mangeshd', 'jolly', '1 (541) 7543010', '(213) 595 2527', 'mangesh.jolly@gmail.com', 'developer']|
+|2013-10-28 01:24:27.430061| |['1', '87690', 'mangesh', 'jolly', '(541) 754-3010', '(213) 595 2527', 'mangesh.jolly@gmail.com', 'developer']|
+|2013-10-28 01:24:27.430758| |['2', '92837', 'elizabeth', 'beaty', '(714) 595 7623', '(714) 595-3010', 'ebeaty@gmail.com', 'staff']|
+|2013-10-28 01:24:27.430834| |['6', '87690', 'mangeshd', 'jolly', '1 (541) 7543010', '(213) 595 2527', 'mangesh.jolly@gmail.com', 'developer']|
+|2013-10-28 01:27:21.804820| |['1', '87690', 'mangesh', 'jolly', '(541) 754-3010', '(213) 595 2527', 'mangesh.jolly@gmail.com', 'developer']|
+|2013-10-28 01:27:21.805632| |['2', '92837', 'elizabeth', 'beaty', '(714) 595 7623', '(714) 595-3010', 'ebeaty@gmail.com', 'staff']|
+|2013-10-28 01:27:21.805664| |['6', '87690', 'mangeshd', 'jolly', '1 (541) 7543010', '(213) 595 2527', 'mangesh.jolly@gmail.com', 'developer']|
+single_file_parse_result
+|2013-10-28 01:27:47.057945| |['1', '87690', 'mangesh', 'jolly', '(541) 754-3010', '(213) 595 2527', 'mangesh.jolly@gmail.com', 'developer']|
+|2013-10-28 01:27:47.058833| |['2', '92837', 'elizabeth', 'beaty', '(714) 595 7623', '(714) 595-3010', 'ebeaty@gmail.com', 'staff']|
+|2013-10-28 01:27:47.058865| |['6', '87690', 'mangeshd', 'jolly', '1 (541) 7543010', '(213) 595 2527', 'mangesh.jolly@gmail.com', 'developer']|
+|2013-10-28 01:29:37.700081| |['1', '87690', 'mangesh', 'jolly', '(541) 754-3010', '(213) 595 2527', 'mangesh.jolly@gmail.com', 'developer']|
+|2013-10-28 01:29:37.700863| |['2', '92837', 'elizabeth', 'beaty', '(714) 595 7623', '(714) 595-3010', 'ebeaty@gmail.com', 'staff']|
+|2013-10-28 01:29:37.700889| |['6', '87690', 'mangeshd', 'jolly', '1 (541) 7543010', '(213) 595 2527', 'mangesh.jolly@gmail.com', 'developer']|
+|2013-10-28 01:29:57.387651| |['2', '92837', 'elizabeth', 'beaty', '(714) 595 7623', '(714) 595-3010', 'ebeaty@gmail.com', 'staff']|
+|2013-10-28 01:30:04.379906| |['3', '67891', 'megan', 'price', '(415) 234 5890', '(415) 555 8989', 'mprice@gmail.com', 'director']|
+|2013-10-28 01:30:04.380439| |['4', '67891', 'megan', 'Eprice', '(415) 234-5890', '(415) 555 8989', 'mprice@gmail.com', 'director']|
+|2013-10-28 01:30:04.380469| |['5', '67891', 'megan', 'PRICE', '(415) 234 5890', '(415)-555-8989', 'mprice@gmail.com', 'director']|
+|2013-10-28 01:30:04.380496| |['7', '67891', 'megane', 'PRICE', '(415) 234 5890', '(415)-555-8989', 'mprice@gmail.com', 'director']|
